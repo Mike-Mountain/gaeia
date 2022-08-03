@@ -1,0 +1,25 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/container/feature-container/src",
+  "prefix": "ft-ctr",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/container/feature-container"],
+      "options": {
+        "jestConfig": "libs/container/feature-container/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/container/feature-container/**/*.ts",
+          "libs/container/feature-container/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

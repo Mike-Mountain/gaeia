@@ -4,6 +4,7 @@
   "projects": {
     "app-container": "apps/app-container",
     "app-container-e2e": "apps/e2e/app-container-e2e",
+    "feature-container": "libs/container/feature-container",
     "shared-ui": "libs/shared/shared-ui"
   }
 }

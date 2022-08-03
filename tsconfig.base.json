@@ -16,6 +16,9 @@
     "baseUrl": ".",
     "paths": {
       "@gaeia/container": ["libs/container/src/index.ts"],
+      "@gaeia/container/feature-container": [
+        "libs/container/feature-container/src/index.ts"
+      ],
       "@gaeia/shared/shared-ui": ["libs/shared/shared-ui/src/index.ts"]
     }
   },
