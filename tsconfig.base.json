@@ -19,7 +19,10 @@
       "@gaeia/container/feature-container": [
         "libs/container/feature-container/src/index.ts"
       ],
-      "@gaeia/shared/shared-ui": ["libs/shared/shared-ui/src/index.ts"]
+      "@gaeia/shared/shared-ui": ["libs/shared/shared-ui/src/index.ts"],
+      "@gaeia/timelines/feature-timelines": [
+        "libs/timelines/feature-timelines/src/index.ts"
+      ]
     }
   },
   "exclude": ["node_modules", "tmp"]

@@ -1,0 +1,25 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/timelines/feature-timelines/src",
+  "prefix": "ftr-tl",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/timelines/feature-timelines"],
+      "options": {
+        "jestConfig": "libs/timelines/feature-timelines/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/timelines/feature-timelines/**/*.ts",
+          "libs/timelines/feature-timelines/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}
