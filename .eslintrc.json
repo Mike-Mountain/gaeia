@@ -6,6 +6,8 @@
     {
       "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
       "rules": {
+        "@angular-eslint/no-empty-lifecycle-method": "off",
+        "@typescript-eslint/no-empty-function": "off",
         "@nrwl/nx/enforce-module-boundaries": [
           "error",
           {
@@ -22,8 +24,12 @@
                 "notDependOnLibsWithTags": ["scope:timelines"]
               },
               {
-                "sourceTag": "scope:timelines",
-                "onlyDependOnLibsWithTags": ["scope:timelines", "scope:shared"]
+                "sourceTag": "scope:cronus",
+                "onlyDependOnLibsWithTags": ["scope:cronus", "scope:shared"]
+              },
+              {
+                "sourceTag": "scope:page-builder",
+                "onlyDependOnLibsWithTags": ["scope:cronus", "scope:page-builder", "scope:shared"]
               }
             ]
           }
