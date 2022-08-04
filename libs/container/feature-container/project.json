@@ -1,6 +1,7 @@
 {
   "projectType": "library",
   "sourceRoot": "libs/container/feature-container/src",
+  "root": "libs/container/feature-container",
   "prefix": "ft-ctr",
   "targets": {
     "test": {

@@ -1,6 +1,7 @@
 {
   "projectType": "library",
   "sourceRoot": "libs/cronus/feature-cronus/src",
+  "root": "libs/cronus/feature-cronus",
   "prefix": "crn",
   "targets": {
     "test": {

@@ -1,6 +1,7 @@
 {
   "projectType": "application",
   "sourceRoot": "apps/app-container/src",
+  "root": "apps/app-container",
   "prefix": "app-ctr",
   "targets": {
     "build": {

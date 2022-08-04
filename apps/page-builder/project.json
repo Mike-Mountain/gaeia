@@ -1,6 +1,7 @@
 {
   "projectType": "application",
   "sourceRoot": "apps/page-builder/src",
+  "root": "apps/page-builder",
   "prefix": "app-pb",
   "targets": {
     "build": {

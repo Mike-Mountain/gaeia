@@ -1,6 +1,7 @@
 {
   "projectType": "library",
   "sourceRoot": "libs/page-builder/feature-page-builder/src",
+  "root": "libs/page-builder/feature-page-builder",
   "prefix": "ft-pgb",
   "targets": {
     "test": {

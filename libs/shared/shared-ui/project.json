@@ -1,6 +1,7 @@
 {
   "projectType": "library",
   "sourceRoot": "libs/shared/shared-ui/src",
+  "root": "libs/shared/shared-ui",
   "prefix": "ui",
   "targets": {
     "test": {
