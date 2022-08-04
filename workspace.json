@@ -8,6 +8,7 @@
     "feature-cronus": "libs/cronus/feature-cronus",
     "page-builder": "apps/page-builder",
     "page-builder-e2e": "apps/e2e/page-builder-e2e",
+    "feature-page-builder": "libs/page-builder/feature-page-builder",
     "shared-ui": "libs/shared/shared-ui"
   }
 }

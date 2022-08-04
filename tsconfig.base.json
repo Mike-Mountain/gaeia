@@ -22,6 +22,9 @@
       "@gaeia/cronus/feature-cronus": [
         "libs/cronus/feature-cronus/src/index.ts"
       ],
+      "@gaeia/page-builder/feature-page-builder": [
+        "libs/page-builder/feature-page-builder/src/index.ts"
+      ],
       "@gaeia/shared/shared-ui": ["libs/shared/shared-ui/src/index.ts"],
       "@gaeia/timelines/feature-timelines": [
         "libs/timelines/feature-timelines/src/index.ts"

@@ -1,0 +1,25 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/page-builder/feature-page-builder/src",
+  "prefix": "ft-pgb",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/page-builder/feature-page-builder"],
+      "options": {
+        "jestConfig": "libs/page-builder/feature-page-builder/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/page-builder/feature-page-builder/**/*.ts",
+          "libs/page-builder/feature-page-builder/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}
