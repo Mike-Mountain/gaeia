@@ -13,10 +13,6 @@
         "polyfills": "apps/app-container/src/polyfills.ts",
         "tsConfig": "apps/app-container/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
-        "assets": [
-          "apps/app-container/src/favicon.ico",
-          "apps/app-container/src/assets"
-        ],
         "styles": ["apps/app-container/src/styles.scss"],
         "scripts": [],
         "customWebpackConfig": {
@@ -38,10 +34,12 @@
             }
           ],
           "assets": [
+            "apps/app-container/src/favicon.ico",
+            "apps/app-container/src/assets",
             {
               "glob": "**/*",
-              "input": "config/prod",
-              "output": "assets/config/"
+              "input": "config/prod/",
+              "output": "config/"
             }
           ],
           "outputHashing": "all",
@@ -57,10 +55,12 @@
           "sourceMap": true,
           "namedChunks": true,
           "assets": [
+            "apps/app-container/src/favicon.ico",
+            "apps/app-container/src/assets",
             {
               "glob": "**/*",
-              "input": "config/dev",
-              "output": "assets/config/"
+              "input": "config/dev/",
+              "output": "config/"
             }
           ]
         }
