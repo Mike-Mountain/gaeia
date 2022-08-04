@@ -2,17 +2,17 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
-import { RemoteEntryComponent } from './entry.component';
-import { NxWelcomeComponent } from './nx-welcome.component';
-
 @NgModule({
-  declarations: [RemoteEntryComponent, NxWelcomeComponent],
+  declarations: [],
   imports: [
     CommonModule,
     RouterModule.forChild([
       {
         path: '',
-        component: RemoteEntryComponent,
+        loadChildren: () =>
+          import(
+            'libs/page-builder/feature-page-builder/src/lib/feature-page-builder.module'
+          ).then((m) => m.FeaturePageBuilderModule),
       },
     ]),
   ],
