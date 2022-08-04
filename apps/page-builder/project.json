@@ -1,0 +1,119 @@
+{
+  "projectType": "application",
+  "sourceRoot": "apps/page-builder/src",
+  "prefix": "app-pb",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:webpack-browser",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/apps/page-builder",
+        "index": "apps/page-builder/src/index.html",
+        "main": "apps/page-builder/src/main.ts",
+        "polyfills": "apps/page-builder/src/polyfills.ts",
+        "tsConfig": "apps/page-builder/tsconfig.app.json",
+        "inlineStyleLanguage": "scss",
+        "assets": [
+          "apps/page-builder/src/favicon.ico",
+          "apps/page-builder/src/assets"
+        ],
+        "styles": ["apps/page-builder/src/styles.scss"],
+        "scripts": [],
+        "customWebpackConfig": {
+          "path": "apps/page-builder/webpack.config.js"
+        }
+      },
+      "configurations": {
+        "production": {
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "500kb",
+              "maximumError": "1mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "2kb",
+              "maximumError": "4kb"
+            }
+          ],
+          "fileReplacements": [
+            {
+              "replace": "apps/page-builder/src/environments/environment.ts",
+              "with": "apps/page-builder/src/environments/environment.prod.ts"
+            }
+          ],
+          "outputHashing": "all",
+          "customWebpackConfig": {
+            "path": "apps/page-builder/webpack.prod.config.js"
+          }
+        },
+        "development": {
+          "buildOptimizer": false,
+          "optimization": false,
+          "vendorChunk": true,
+          "extractLicenses": false,
+          "sourceMap": true,
+          "namedChunks": true
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "serve": {
+      "executor": "@nrwl/angular:webpack-server",
+      "configurations": {
+        "production": {
+          "browserTarget": "page-builder:build:production"
+        },
+        "development": {
+          "browserTarget": "page-builder:build:development"
+        }
+      },
+      "defaultConfiguration": "development",
+      "options": {
+        "port": 4201,
+        "publicHost": "http://localhost:4201"
+      }
+    },
+    "extract-i18n": {
+      "executor": "@angular-devkit/build-angular:extract-i18n",
+      "options": {
+        "browserTarget": "page-builder:build"
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "apps/page-builder/**/*.ts",
+          "apps/page-builder/**/*.html"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/apps/page-builder"],
+      "options": {
+        "jestConfig": "apps/page-builder/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "serve-static": {
+      "executor": "@nrwl/angular:file-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "page-builder:build",
+        "port": 4201
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "page-builder:build:development"
+        },
+        "production": {
+          "buildTarget": "page-builder:build:production"
+        }
+      }
+    }
+  },
+  "tags": []
+}

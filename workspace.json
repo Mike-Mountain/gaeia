@@ -5,6 +5,9 @@
     "app-container": "apps/app-container",
     "app-container-e2e": "apps/e2e/app-container-e2e",
     "feature-container": "libs/container/feature-container",
+    "feature-cronus": "libs/cronus/feature-cronus",
+    "page-builder": "apps/page-builder",
+    "page-builder-e2e": "apps/e2e/page-builder-e2e",
     "shared-ui": "libs/shared/shared-ui"
   }
 }
