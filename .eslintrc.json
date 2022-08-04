@@ -29,7 +29,11 @@
               },
               {
                 "sourceTag": "scope:page-builder",
-                "onlyDependOnLibsWithTags": ["scope:cronus", "scope:page-builder", "scope:shared"]
+                "onlyDependOnLibsWithTags": [
+                  "scope:cronus",
+                  "scope:page-builder",
+                  "scope:shared"
+                ]
               }
             ]
           }
