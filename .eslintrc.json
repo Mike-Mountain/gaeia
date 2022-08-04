@@ -13,8 +13,17 @@
             "allow": [],
             "depConstraints": [
               {
-                "sourceTag": "*",
-                "onlyDependOnLibsWithTags": ["*"]
+                "sourceTag": "scope:shared",
+                "onlyDependOnLibsWithTags": ["scope:shared"]
+              },
+              {
+                "sourceTag": "scope:container",
+                "onlyDependOnLibsWithTags": ["scope:container", "scope:shared"],
+                "notDependOnLibsWithTags": ["scope:timelines"]
+              },
+              {
+                "sourceTag": "scope:timelines",
+                "onlyDependOnLibsWithTags": ["scope:timelines", "scope:shared"]
               }
             ]
           }

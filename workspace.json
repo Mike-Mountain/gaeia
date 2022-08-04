@@ -4,10 +4,7 @@
   "projects": {
     "app-container": "apps/app-container",
     "app-container-e2e": "apps/e2e/app-container-e2e",
-    "app-timelines": "apps/app-timelines",
-    "app-timelines-e2e": "apps/e2e/app-timelines-e2e",
     "feature-container": "libs/container/feature-container",
-    "shared-ui": "libs/shared/shared-ui",
-    "feature-timelines": "libs/timelines/feature-timelines"
+    "shared-ui": "libs/shared/shared-ui"
   }
 }
